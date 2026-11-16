@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para Valentina · 25 meses</title>
+<meta name="theme-color" content="#F6EFE6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400&family=Homemade+Apple&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- ============ MÚSICA (poné tu archivo en assets/musica.mp3) ============ -->
+<audio id="musica" src="assets/musica.mp3" loop preload="auto"></audio>
+<button id="btnMusica" class="musica" aria-label="Pausar o reanudar la música" hidden>
+  <span class="barras"><i></i><i></i><i></i></span>
+</button>
+
+<!-- ============ 1. PANTALLA DE INICIO ============ -->
+<section id="inicio" class="inicio">
+  <div class="inicio-caja">
+    <p class="inicio-1">Un poquito de nuestra historia...</p>
+    <p class="inicio-2">Para vos, que hacés especiales hasta los días más simples.</p>
+    <button id="btnComenzar" class="boton">Comenzar nuestra historia ♡</button>
+  </div>
+</section>
+
+<main id="contenido">
+
+<!-- ============ 2. PORTADA ============ -->
+<header class="portada">
+  <figure class="portada-foto">
+    <img src="assets/portada.jpg" alt="Valentina y yo en el jardín">
+  </figure>
+  <h1>Valentina</h1>
+  <p class="portada-sub">25 meses juntos</p>
+  <p class="portada-fecha">17 de octubre de 2024 — 17 de noviembre de 2026</p>
+  <span class="flecha" aria-hidden="true"></span>
+</header>
+
+<!-- ============ 3. LÍNEA DE TIEMPO ============ -->
+<!-- Para editar: cambiá los textos de cada <li>. Dejé "completar" donde falta info. -->
+<section class="seccion" id="historia">
+  <h2>Nuestra historia</h2>
+  <ol class="tiempo">
+    <li class="rev">
+      <time>17 de octubre de 2024</time>
+      <h3>Empezamos</h3>
+      <p>Acá comenzó todo. Desde que me dijiste que sí, empezó una de las historias más lindas de mi vida. Y después de 25 meses, sigo sintiendo la misma felicidad de tenerte a mi lado. Qué lindo es compartir todo con vos. ❤️</p>
+    </li>
+    <li class="rev">
+      <h3>Mi jardín más hermoso sos vos!</h3>
+      <img src="assets/f2.jpg" alt="Jardín florecido" loading="lazy">
+    </li>
+    <li class="rev">
+      <h3>Los mejores mates son con vos!</h3>
+      <img src="assets/f9.jpg" alt="Mate de noche" loading="lazy">
+    </li>
+    <li class="rev">
+      <h3>Mi cocinera hermosa</h3>
+      <img src="assets/f8.jpg" alt="Pizza casera" loading="lazy">
+    </li>
+    <li class="rev hito">
+      <time>17 de noviembre de 2026</time>
+      <h3>2 años y 1 mes</h3>
+      <p>25 meses. y mucho mas que se viene jiji</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ 4. GALERÍA POLAROID ============ -->
+<!-- Cada <figure> es una polaroid. Cambiá el <figcaption> por tu texto. -->
+<section class="seccion" id="galeria">
+  <h2>Nuestras fotos</h2>
+  <div class="polaroids">
+    <figure class="pola rev" style="--r:-2.5deg"><img src="assets/f3.jpg" alt="Tarde en casa" loading="lazy"><figcaption>Planes tranquilos</figcaption></figure>
+    <figure class="pola rev" style="--r:2deg"><img src="assets/f4.jpg" alt="Hamburguesa" loading="lazy"><figcaption>Ese bocado</figcaption></figure>
+    <figure class="pola rev" style="--r:1.5deg"><img src="assets/f5.jpg" alt="Valentina con flores" loading="lazy"><figcaption>Flores</figcaption></figure>
+    <figure class="pola rev" style="--r:-2deg"><img src="assets/f1.jpg" alt="Valentina de noche" loading="lazy"><figcaption>Siempre ella</figcaption></figure>
+    <figure class="pola ancha rev" style="--r:1deg"><img src="assets/f7.jpg" alt="Selfie riéndonos" loading="lazy"><figcaption>Las que salen movidas también valen</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ 5. CONTADOR ============ -->
+<section class="seccion centro" id="momentos">
+  <h2>25 meses, un montón de momentos</h2>
+  <p class="suave">Desde el 17 de octubre de 2024, y contando.</p>
+  <div class="contador" id="contador" aria-live="off">
+    <div><b id="cMeses">0</b><span>meses</span></div>
+    <div><b id="cDias">0</b><span>días</span></div>
+    <div><b id="cHoras">0</b><span>horas</span></div>
+    <div><b id="cMin">0</b><span>minutos</span></div>
+    <div><b id="cSeg">0</b><span>segundos</span></div>
+  </div>
+  <p class="suave" id="cTotal"></p>
+</section>
+
+<!-- ============ 6. CARTA ============ -->
+<!-- Editá libremente el texto. Cada <p> es un párrafo. -->
+<section class="seccion" id="carta">
+  <article class="papel rev">
+    <h2>Para vos</h2>
+    <p>Vale:</p>
+    <p>Hoy cumplimos 25 meses y quería decirte, simple, que estoy agradecido. Por tu compañía, por los ratos compartidos y por tantos días comunes que con vos se sienten distintos.</p>
+    <p>TE AMO</p>
+    <p>Gracias por estos 25 meses. Y por todo lo que todavía nos queda por vivir.</p>
+    <p class="firma">Te quiero mucho.</p>
+  </article>
+</section>
+
+<!-- ============ 7. MENSAJE OCULTO ============ -->
+<section class="seccion centro" id="secreto">
+  <p class="suave">Una cosa más.</p>
+  <button id="btnSecreto" class="boton chico" aria-expanded="false" aria-controls="msgSecreto">Tocá acá</button>
+  <p id="msgSecreto" class="secreto" aria-live="polite">[Quiero vivir la vida entera con vos, te amoooooooo demasiado !!!!!]</p>
+</section>
+
+<!-- ============ 8. FINAL ============ -->
+<footer class="final">
+  <p class="final-frase rev">Con vos, hasta lo simple<br>se vuelve lo mejor del día.</p>
+  <p class="final-sub rev">25 meses · 17/10/2024</p>
+</footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
